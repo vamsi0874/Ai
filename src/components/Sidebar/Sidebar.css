@@ -1,0 +1,137 @@
+
+html, body {
+   overflow-y: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+  min-height: 100vh;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* background-color: #f0f4f9;    */
+  background-color: #3b3b3f;
+  padding: 25px 15px;
+
+}
+
+.sidebar img{
+    width: 20px;
+    background-color: #c4c7c5;
+    border-radius: 50%;
+}
+img.Newchart{
+   background-color: #3b3b3f;
+}
+img.Newchart:hover{
+   background-color: #707071;
+}
+
+.sidebar .menu{
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+    width: 30px;
+    
+}
+
+.sidebar .new-chat{
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    /* background-color: #e6eaf1; */
+    background-color: #3a3a3c;
+    border-radius: 50px;
+    font-size: 14px;
+    color: #e1e1e6;
+    cursor: pointer;
+}
+.sidebar .recent{
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1.5s;
+    color: #cfcfcf;
+}
+.sidebar .recent-title{
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.sidebar .recent-entry{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    padding: 10px;
+    padding-right: 40px;
+    border-radius: 50px;
+    color: #cecece;
+    cursor: pointer;
+   
+}
+.sidebar .recent-entry:hover{
+    /* background-color: #e2e6eb; */
+    background-color: #707071;
+}
+
+
+
+.sidebar .bottom{
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .bottom-item{
+    padding-right: 10px;
+    cursor: pointer;
+}
+
+@media (max-width:600px){
+    .sidebar{
+        display: none;
+    }
+} 
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+img.remove{
+    background-color: rgb(185, 185, 185);
+    padding: 1px;
+        position: relative;
+        top: 10px;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        display: none;
+}
+
+
+
+div.v-item{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding-right: 5px;
+    border-radius: 20px 20px 20px 20px;
+}
+div.v-item:hover{
+    background-color: #707071;
+  
+    
+}
+
+div.v-item:hover .remove {
+    display: block;
+    opacity: 1;
+  }
+  
+  
